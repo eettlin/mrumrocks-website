@@ -1,0 +1,8 @@
+# ignore resources folder
+rsc/
+
+# ignore any lingering resources
+*.png
+*.gif
+*.swf
+*.ico
