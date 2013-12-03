@@ -7,6 +7,10 @@ html, body {
     height: 100%;
 }
 
+* {
+    font-family: sans-serif;
+}
+
 body {
     background-color: #e8592a;
     width: 100%;
@@ -52,15 +56,16 @@ div.top {
     -ms-user-select: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 #navbar a {
-    font-family: sans-serif;
-    font-weight:bold;
+    font-weight: bold;
     display: inline-block;
     text-transform: uppercase;
     padding: 4pt 1em;
     margin: 0;
-    text-decoration: none;
-    
 }
 
 #navbar a:link, #navbar a:visited {
@@ -87,6 +92,26 @@ div.top {
     text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: sans-serif;
+.columns {
+    width: 100%;
+}
+
+.columns:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.columns * {
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.three-columns * {
+    width: 29%;
+    margin: 0 1.66%;
+    margin-bottom: 1em;
 }
