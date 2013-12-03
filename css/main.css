@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-    background-color: #e8592a;
+    background: url("../rsc/stripes.png") center top repeat-y #e8592a;
     width: 100%;
 }
 
