@@ -3,6 +3,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="../css/main.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="../rslides/responsiveslides.min.js"></script>
+<link rel="stylesheet" href="../rslides/responsiveslides.css"/ >
+<script type="text/javascript">
+$(function() {
+    $("#slider-advanim").responsiveSlides({
+        maxwidth: 750px,
+        speed: 800
+    });
+</script>
 <title>Portfolio</title>
 </head>
 <style type="text/css">
@@ -52,6 +62,13 @@
         <h1>Portfolio</h1>
         <div class="portfolio-card" id="test">
             <div class="portfolio-contents">
+                <h2>Advanced Animation</h2>
+                <script type="text/css">
+                    
+                <ul class="rslides" id="slider-advanim">
+                    <li><img src="../rsc/portfolio/advanim/01.jpg" /></li>
+                    <li><img src="../rsc/portfolio/advanim/02.png" /></li>
+                </ul>
             </div>
         </div>
     </div>
