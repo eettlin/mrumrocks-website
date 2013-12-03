@@ -15,19 +15,24 @@
     padding: 4px 0;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15) inset;
     border: thin rgba(0, 0, 0, 0.5) solid;
-    color: black;
+    color: black !important;
     font-weight: bold;
 }
 #project-selector a:link, #project-selector a:visited {
-    background-color: #e3f1f6; }
-#project-selector a:hover { background-color: #9cc9da; }
+    transition: 0.2s;
+    background-color: #e3f1f6;
+}
+#project-selector a:hover {
+    transition: 0.2s;
+    background-color: #9cc9da;
+}
 #project-selector a:active { background-color: #9cb4c9; }
 
 /* Project indicator icons */
 .pselect { background: 4px center no-repeat; }
-.blender { background-image: url("../../rsc/project-blender.png"); }
-.flash   { background-image: url("../../rsc/project-flash.png");   }
-.java    { background-image: url("../../rsc/project-java.png");    }
+.blender { background-image: url("../rsc/project-blender.png"); }
+.flash   { background-image: url("../rsc/project-flash.png");   }
+.java    { background-image: url("../rsc/project-java.png");    }
 .clear   {
     background: none;
     font-weight: normal !important;
@@ -58,15 +63,22 @@
 }
 
 /* Close link */
-.project-close {
+.close {
+    transition: 0.2s;
     width: 100%;
     line-height: 1.5em;
     display: inline-block;
     color: black;
     border-top: thin black solid;
+    border-radius: 0 0 4px 4px;
 }
-.project-close:hover { background-color: rgba(0, 0, 0, 0.1); }
-.project-close:active { background-color: rgba(0, 0, 0, 0.2); }
+.close:hover {
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.close:active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
 .project h2 { text-align: center; }
 
@@ -107,22 +119,22 @@
         
         <div class="project" id="td-as3">
             <h2>ActionScript 3 Tower Defense</h2>
-            <a href="#" class="project-close">Close</a>
+            <a href="#" class="close">Close</a>
         </div>
         
         <div class="project" id="td-java">
             <h2>JGame Tower Defense</h2>
-            <a href="#" class="project-close">Close</a>
+            <a href="#" class="close">Close</a>
         </div>
         
         <div class="project" id="snowman">
             <h2>Introduction to Blender: Snowman</h2>
-            <a href="#" class="project-close">Close</a>
+            <a href="#" class="close">Close</a>
         </div>
         
         <div class="project" id="walkcycle">
             <h2>Animating a Walk Cycle</h2>
-            <a href="#" class="project-close">Close</a>
+            <a href="#" class="close">Close</a>
         </div>
     </div>
     

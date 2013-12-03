@@ -8,7 +8,7 @@ html, body {
 }
 
 * {
-    font-family: sans-serif;
+    font-family: Segoe UI, sans-serif;
 }
 
 body {
@@ -70,16 +70,19 @@ a {
 
 #navbar a:link, #navbar a:visited {
     background-color: none;
+    transition: 0.2s;
     color: #111;
 }
 
 #navbar a:hover {
     background-color: #1ba2cf;
+    transition: 0.2s;
     color: #222;
 }
 
 #navbar a:active {
     background-color: #1a94bc;
+    transition: 0.2s;
 }
 
 #content {
@@ -90,6 +93,24 @@ a {
 
 #content h1 {
     text-align: center;
+}
+
+#content a {
+    color: black;
+    border-bottom: black thin dotted;
+}
+
+#content a:hover {
+    color: #666;
+}
+
+#content a:active {
+    color: red;
+}
+
+a.close {
+    border-bottom: none !important;
+    color: black !important;
 }
 
 .columns {
