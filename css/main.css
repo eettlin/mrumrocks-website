@@ -12,7 +12,10 @@ html, body {
 }
 
 body {
-    background: url("../rsc/stripes.png") center top repeat-y #e8592a;
+    background-color: #333;
+    background-image: url("../rsc/dots.png"), url("../rsc/stripes.png");
+    background-repeat: repeat, repeat-y;
+    background-position: left top, center top;
     width: 100%;
 }
 
@@ -47,14 +50,15 @@ div.top {
     
     margin: 2pt 0;
     
-    background: rgb(138,203,252);
-    background: -moz-linear-gradient(top,  rgba(138,203,252,1) 0%, rgba(102,182,252,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(138,203,252,1)), color-stop(100%,rgba(102,182,252,1)));
-    background: -webkit-linear-gradient(top,  rgba(138,203,252,1) 0%,rgba(102,182,252,1) 100%);
-    background: -o-linear-gradient(top,  rgba(138,203,252,1) 0%,rgba(102,182,252,1) 100%);
-    background: -ms-linear-gradient(top,  rgba(138,203,252,1) 0%,rgba(102,182,252,1) 100%);
-    background: linear-gradient(to bottom,  rgba(138,203,252,1) 0%,rgba(102,182,252,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8acbfc', endColorstr='#66b6fc',GradientType=0 );
+    background: #e56b14;
+    background: -moz-linear-gradient(top,  #e56b14 0%, #c45911 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e56b14), color-stop(100%,#c45911));
+    background: -webkit-linear-gradient(top,  #e56b14 0%,#c45911 100%);
+    background: -o-linear-gradient(top,  #e56b14 0%,#c45911 100%);
+    background: -ms-linear-gradient(top,  #e56b14 0%,#c45911 100%);
+    background: linear-gradient(to bottom,  #e56b14 0%,#c45911 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e56b14', endColorstr='#c45911',GradientType=0 );
+
 
     text-align: center;
     
@@ -84,7 +88,7 @@ a {
 }
 
 #navbar a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.075);
     transition: 0.2s;
     color: #222;
 }
@@ -158,11 +162,11 @@ a.close {
     
     background-color: white;
     transition: 0.2s;
-    box-shadow: 0 0 20pt rgba(41,184,232,0.35) inset;
+    box-shadow: 0 0 20pt rgba(152,152,152,0.35) inset;
 }
 .modal:hover {
     transition: 0.2s;
-    box-shadow: 0 0 20pt rgba(232,89,42,0.65) inset;
+    box-shadow: 0 0 20pt rgba(229,107,20,0.65) inset;
 }
 .modal > a:first-child { 
     color: black !important;
@@ -196,10 +200,10 @@ a.close {
 }
 .modal-info a.close:hover  {
     transition: 0.2s;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(229, 107, 20, 0.05);
 }
 .modal-info a.close:active {
     transition: 0.2s;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(229, 107, 20, 0.2);
 }
 
