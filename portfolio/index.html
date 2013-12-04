@@ -4,43 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="../css/main.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="../rslides/responsiveslides.min.js"></script>
-<link rel="stylesheet" href="../rslides/responsiveslides.css"/ >
+<script type="text/javascript" src="../slides/slides.min.js"></script>
+<link rel="stylesheet" href="../slides/slides.css"/ >
 <script type="text/javascript">
 $(function() {
-    $("#slider-advanim").responsiveSlides({
-        maxwidth: 750px,
-        speed: 800
-    });
+    function startSlideShow(divname) {
+        $(divname).rsfSlideshow({interval: 3});
+    }
+    
+    startSlideShow('#slider-advanim');
+});
 </script>
 <title>Portfolio</title>
 </head>
 <style type="text/css">
-.portfolio-card {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.portfolio {
     display: none;
-    background: rgba(0, 0, 0, 0.75);
-    
 }
-.portfolio-card:target {
+.portfolio:target {
     display: block;
 }
 .portfolio-contents {
-    margin: auto;
-    width: 768px;
-    height: 512px;
-    margin-top: -256px;
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    margin-left: -384px;
-    background-color: white;
-    border-radius: 8pt;
-    box-shadow: 0 0 0 4pt black inset;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10pt;
 }
 </style>
 <body>
@@ -60,15 +48,27 @@ $(function() {
     
     <div id="content" class="top">
         <h1>Portfolio</h1>
-        <div class="portfolio-card" id="test">
-            <div class="portfolio-contents">
-                <h2>Advanced Animation</h2>
-                <script type="text/css">
-                    
-                <ul class="rslides" id="slider-advanim">
-                    <li><img src="../rsc/portfolio/advanim/01.jpg" /></li>
-                    <li><img src="../rsc/portfolio/advanim/02.png" /></li>
-                </ul>
+        <div class="portfolio" id="advanim">
+            <h2>Advanced Animation</h2>
+            
+            <div id="slider-advanim" class="rs-slideshow">
+            <div class="slide-container">
+                <img src="../rsc/portfolio/advanim/01.png" alt="Snowman chess" />
+                <span class="slide-caption">Snowman chess</span>
+            </div>
+            <ol class="slides">
+                <li><a href="../rsc/portfolio/advanim/01.png"
+                        title="Snowman chess"
+                        alt="Snowman chess">Snowman chess</a></li>
+                <li><a href="../rsc/portfolio/advanim/02.png"
+                        title="Blendcraft"
+                        alt="Blendcraft">Blendcraft</a></li>
+                <li><a href="../rsc/portfolio/advanim/03.png"
+                        title="Animation: Rocky & Fluffy"
+                        alt="Animation: Rocky & Fluffy"
+                        data-link-to="http://youtu.be/_UP9opf99mA">
+                        Rocky & Fluffy</a></li>
+            </ol>
             </div>
         </div>
     </div>
