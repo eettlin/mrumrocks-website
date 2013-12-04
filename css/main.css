@@ -46,7 +46,16 @@ div.top {
     border-right: none;
     
     margin: 2pt 0;
-    background-color: #29b8e8;
+    
+    background: rgb(138,203,252);
+    background: -moz-linear-gradient(top,  rgba(138,203,252,1) 0%, rgba(102,182,252,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(138,203,252,1)), color-stop(100%,rgba(102,182,252,1)));
+    background: -webkit-linear-gradient(top,  rgba(138,203,252,1) 0%,rgba(102,182,252,1) 100%);
+    background: -o-linear-gradient(top,  rgba(138,203,252,1) 0%,rgba(102,182,252,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(138,203,252,1) 0%,rgba(102,182,252,1) 100%);
+    background: linear-gradient(to bottom,  rgba(138,203,252,1) 0%,rgba(102,182,252,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8acbfc', endColorstr='#66b6fc',GradientType=0 );
+
     text-align: center;
     
     user-select: none;
@@ -75,13 +84,13 @@ a {
 }
 
 #navbar a:hover {
-    background-color: #1ba2cf;
+    background-color: rgba(0, 0, 0, 0.05);
     transition: 0.2s;
     color: #222;
 }
 
 #navbar a:active {
-    background-color: #1a94bc;
+    background-color: rgba(0, 0, 0, 0.15);
     transition: 0.2s;
 }
 
@@ -93,6 +102,8 @@ a {
 
 #content h1 {
     text-align: center;
+    width: 100%;
+    background: 
 }
 
 #content a, #content a:link, #content a:visited {
