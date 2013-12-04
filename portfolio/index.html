@@ -32,48 +32,6 @@ $(document).ready(function() {
 <title>Portfolio</title>
 </head>
 <style type="text/css">
-.portfolio {
-    display: none;
-    border: thin black solid;
-    width: 100%;
-    height: 100%;
-    border-radius: 16px;
-    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1)));
-    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
-    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
-    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
-    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1a000000',GradientType=0 );
-}
-.portfolio:target {
-    display: block;
-}
-.portfolio-contents {
-    padding-left: 16pt;
-}
-.portfolio-contents p {
-    margin-left: 1em;
-}
-a.close {
-    margin: 0;
-    display: inline-block;
-    width: 100%;
-    color: black;
-    border-top: thin black solid;
-    padding: 2pt 0;
-    border-radius: 0 0 8pt 8pt;
-    text-align: center;
-}
-a.close:hover  {
-    transition: 0.2s;
-    background: rgba(0, 0, 0, 0.05);
-}
-a.close:active {
-    transition: 0.2s;
-    background: rgba(0, 0, 0, 0.2);
-}
-
 .fancybox img, .fancybox-media img {
     border-radius: 8px;
     border: thin black solid;
@@ -101,9 +59,9 @@ a.fancybox, a.fancybox-media {
     
     <div id="content" class="top">
         <h1>Portfolio</h1>
-        <a href="#advanim"><h2>Advanced Animation</h2></a>
-        <div class="portfolio" id="advanim">
-            <div class="portfolio-contents">
+        <div class="modal">
+            <a href="#advanim"><h2>Advanced Animation</h2></a>
+            <div class="modal-info" id="advanim">
                 <h3>Still Renders</h3>
                 <p>
                     <a class="fancybox" href="img/advanim/full/01.png" data-fancybox-group="advanim-s" title="Snowman chess">
@@ -117,8 +75,8 @@ a.fancybox, a.fancybox-media {
                         <img src="img/advanim/thumb/03.png" title="Rocky &amp; Fluffy" alt="" /></a>
                 </p>
                 </h3>
+                <a class="close" href="#">Close</a>
             </div>
-            <a class="close" href="#">Close</a>
         </div>
     </div>
     
