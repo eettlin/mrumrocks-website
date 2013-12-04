@@ -6,59 +6,6 @@
 <title>Courses</title>
 
 <style type="text/css">
-.course {
-    width: 80%;
-    margin-left: 5%;
-    border-radius: 8pt;
-    border: thin black solid;
-    margin-bottom: 1em;
-    
-    background-color: white;
-    transition: 0.2s;
-    box-shadow: 0 0 20pt rgba(41,184,232,0.35) inset;
-}
-.course:hover {
-    transition: 0.2s;
-    box-shadow: 0 0 20pt rgba(232,89,42,0.65) inset;
-}
-.course > a:first-child { 
-    color: black !important;
-}
-.course h2 {
-    margin: 0;
-    padding: 4pt 4pt 4pt 8pt;
-}
-.course-info {
-    background: rgba(255, 255, 255, 0.5);
-    display: none;
-    border-top: thin black solid; 
-    padding: 0;
-}
-.course-info > * {
-    margin-left: 20pt;
-    margin-right: 20pt;
-}
-.course-info:target {
-    display: block;
-}
-a.close {
-    margin: 0;
-    display: inline-block;
-    width: 100%;
-    color: black;
-    border-top: thin black solid;
-    padding: 2pt 0;
-    border-radius: 0 0 8pt 8pt;
-    text-align: center;
-}
-a.close:hover  {
-    transition: 0.2s;
-    background: rgba(0, 0, 0, 0.05);
-}
-a.close:active {
-    transition: 0.2s;
-    background: rgba(0, 0, 0, 0.2);
-}
 ul.projects {
     margin-top: 0 !important;
 }
@@ -85,9 +32,9 @@ ul.projects li {
     
     <div id="content" class="top">
         <h1>Courses</h1>
-        <div class="course">
+        <div class="modal">
             <a href="#actionscript"><h2>ActionScript</h2></a>
-            <div class="course-info" id="actionscript">
+            <div class="modal-info" id="actionscript">
                 <h3>Description</h3>
                 <p>
                 Learn the programming language ActionScript in the Adobe
@@ -100,9 +47,9 @@ ul.projects li {
                 <a href="#" class="close">Close</a>
             </div>
         </div>
-        <div class="course">
+        <div class="modal">
             <a href="#apcs"><h2>AP Computer Science</h2></a>
-            <div class="course-info" id="apcs">
+            <div class="modal-info" id="apcs">
                 <h3>Description</h3>
                 <p>
                 The AP Computer Science course focuses on introductory
@@ -115,9 +62,9 @@ ul.projects li {
                 <a href="#" class="close">Close</a>
             </div>
         </div>
-        <div class="course">
+        <div class="modal">
             <a href="#animation"><h2>Advanced Animation</h2></a>
-            <div class="course-info" id="animation">
+            <div class="modal-info" id="animation">
                 <h3>Description</h3>
                 <p>
                 In the Advanced Animation course, students are introduced
