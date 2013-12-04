@@ -37,9 +37,18 @@ $(document).ready(function() {
     border: thin black solid;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     margin: 0 4pt;
+    transition: 0.2s;
 }
 a.fancybox, a.fancybox-media {
     border: none !important;
+}
+.fancybox img:hover, .fancybox-media img:hover {
+    transition: 0.2s;
+    filter: brightness(70%);
+    -webkit-filter: brightness(70%);
+    -moz-filter: brightness(70%);
+    -o-filter: brightness(70%);
+    -ie-filter: brightness(70%);
 }
 </style>
 <body>
