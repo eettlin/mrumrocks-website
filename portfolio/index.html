@@ -3,9 +3,87 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="../css/main.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<!-- Fancybox plugin -->
+<script type="text/javascript" src="../fancybox/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<script type="text/javascript" src="../fancybox/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet" type="text/css" href="../fancybox/fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.fancybox').fancybox();
+    $('.fancybox-media')
+    .attr('rel', 'media-gallery')
+    .fancybox({
+        openEffect : 'none',
+        closeEffect : 'none',
+        prevEffect : 'none',
+        nextEffect : 'none',
+
+        arrows : false,
+        helpers : {
+            media : {},
+            buttons : {}
+        }
+    });
+});
+</script>
 <title>Portfolio</title>
 </head>
+<style type="text/css">
+.portfolio {
+    display: none;
+    border: thin black solid;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.1)));
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#1a000000',GradientType=0 );
+}
+.portfolio:target {
+    display: block;
+}
+.portfolio-contents {
+    padding-left: 16pt;
+}
+.portfolio-contents p {
+    margin-left: 1em;
+}
+a.close {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    color: black;
+    border-top: thin black solid;
+    padding: 2pt 0;
+    border-radius: 0 0 8pt 8pt;
+    text-align: center;
+}
+a.close:hover  {
+    transition: 0.2s;
+    background: rgba(0, 0, 0, 0.05);
+}
+a.close:active {
+    transition: 0.2s;
+    background: rgba(0, 0, 0, 0.2);
+}
 
+.fancybox img, .fancybox-media img {
+    border-radius: 8px;
+    border: thin black solid;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    margin: 0 4pt;
+}
+a.fancybox, a.fancybox-media {
+    border: none !important;
+}
+</style>
 <body>
 
 <div id="page">
@@ -23,6 +101,25 @@
     
     <div id="content" class="top">
         <h1>Portfolio</h1>
+        <a href="#advanim"><h2>Advanced Animation</h2></a>
+        <div class="portfolio" id="advanim">
+            <div class="portfolio-contents">
+                <h3>Still Renders</h3>
+                <p>
+                    <a class="fancybox" href="img/advanim/full/01.png" data-fancybox-group="advanim-s" title="Snowman chess">
+                        <img src="img/advanim/thumb/01.png" title="Snowman chess" alt="" /></a>
+                    <a class="fancybox" href="img/advanim/full/02.png" data-fancybox-group="advanim-s" title="Blendcraft">
+                        <img src="img/advanim/thumb/02.png" title="Blendcraft" alt="" /></a>
+                </p>
+                <h3>Videos</h3>
+                <p>
+                    <a class="fancybox-media" href="http://www.youtube.com/watch?v=_UP9opf99mA" data-fancybox-group="advanim-v">
+                        <img src="img/advanim/thumb/03.png" title="Rocky &amp; Fluffy" alt="" /></a>
+                </p>
+                </h3>
+            </div>
+            <a class="close" href="#">Close</a>
+        </div>
     </div>
     
     <div id="footer" class="top">

@@ -95,7 +95,7 @@ a {
     text-align: center;
 }
 
-#content a {
+#content a, #content a:link, #content a:visited {
     color: black;
     border-bottom: black thin dotted;
 }
