@@ -6,3 +6,6 @@ rsc/
 *.gif
 *.swf
 *.ico
+
+# ignore PDF files (syllabus, etc.)
+*.pdf
